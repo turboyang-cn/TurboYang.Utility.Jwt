@@ -16,10 +16,10 @@ variables:
   buildConfiguration: 'Release'
   
 steps:
-- task: DotNetCoreInstaller@0
+- task: UseDotNet@2
   inputs:
-    packageType: sdk
-    version: '3.0.100-preview6-012264'
+    packageType: 'sdk'
+    version: '3.x'
 
 - task: DotNetCoreCLI@2
   displayName: 'Build Project'
@@ -32,5 +32,3 @@ steps:
   inputs:
     command: 'test'
     projects: '$(solution)'
-
-    
