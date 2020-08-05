@@ -37,6 +37,5 @@ steps:
   displayName: 'Test Project'
   inputs:
     command: 'test'
-    projects: '$(solution)'
+    projects: '**/*Tests.*.csproj'
 
-    
