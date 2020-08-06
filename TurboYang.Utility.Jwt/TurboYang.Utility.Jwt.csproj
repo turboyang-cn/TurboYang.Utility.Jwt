@@ -8,6 +8,7 @@
     <Copyright>© TurboYang. All rights reserved.</Copyright>
     <PackageProjectUrl>https://github.com/turboyang-cn/TurboYang.Utility.Jwt</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>JWT;Token;Encoder;Decoder;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
