@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using Newtonsoft.Json;
+using System.Text.Json;
 using TurboYang.Utiltity.Jwt.Algorithms;
 
 namespace TurboYang.Utiltity.Jwt
@@ -16,7 +16,7 @@ namespace TurboYang.Utiltity.Jwt
                     Algorithm = algorithm.Name,
                 };
 
-                Byte[] dataToSign = Encoding.UTF8.GetBytes($"{Base64UrlConverter.Encode(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(header)))}.{Base64UrlConverter.Encode(payload)}");
+                Byte[] dataToSign = Encoding.UTF8.GetBytes($"{Base64UrlConverter.Encode(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(header)))}.{Base64UrlConverter.Encode(payload)}");
 
                 return $"{Encoding.UTF8.GetString(dataToSign)}.{Base64UrlConverter.Encode(algorithm.Sign(dataToSign))}";
             }
@@ -30,7 +30,7 @@ namespace TurboYang.Utiltity.Jwt
         {
             try
             {
-                return Encode(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(payload)), algorithm);
+                return Encode(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(payload)), algorithm);
             }
             catch
             {
@@ -61,7 +61,7 @@ namespace TurboYang.Utiltity.Jwt
             {
                 Byte[] payloadData = Decode(jwtString, algorithm);
 
-                return JsonConvert.DeserializeObject<T>(Encoding.UTF8.GetString(payloadData));
+                return JsonSerializer.Deserialize<T>(Encoding.UTF8.GetString(payloadData));
             }
             catch
             {
@@ -80,7 +80,7 @@ namespace TurboYang.Utiltity.Jwt
                     return false;
                 }
 
-                JwtHeader header = JsonConvert.DeserializeObject<JwtHeader>(Encoding.UTF8.GetString(Base64UrlConverter.Decode(jwtParts[0])));
+                JwtHeader header = JsonSerializer.Deserialize<JwtHeader>(Encoding.UTF8.GetString(Base64UrlConverter.Decode(jwtParts[0])));
 
                 if (header.Algorithm != algorithm.Name)
                 {

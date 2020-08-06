@@ -1,11 +1,11 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace TurboYang.Utiltity.Jwt.Tests.Common
 {
     public sealed class Payload
     {
-        [JsonProperty("username")]
+        [JsonPropertyName("username")]
         public String Username { get; set; }
     }
 }

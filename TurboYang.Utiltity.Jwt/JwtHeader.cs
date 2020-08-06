@@ -1,14 +1,13 @@
 ﻿using System;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace TurboYang.Utiltity.Jwt
 {
     public sealed class JwtHeader
     {
-        [JsonProperty("alg")]
+        [JsonPropertyName("alg")]
         public String Algorithm { get; set; }
-        [JsonProperty("typ")]
+        [JsonPropertyName("typ")]
         public String Type { get; } = "JWT";
     }
 }

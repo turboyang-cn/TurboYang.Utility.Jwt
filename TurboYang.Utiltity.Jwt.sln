@@ -9,11 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboYang.Utiltity.Jwt.Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboYang.Utiltity.Jwt.Tests.Common", "TurboYang.Utiltity.Jwt.Tests.Common\TurboYang.Utiltity.Jwt.Tests.Common.csproj", "{A87FC91D-35C4-4EE0-92C5-35E116A832EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utiltity.Jwt.Tests.NetCore3", "TurboYang.Utiltity.Jwt.Tests.NetCore3\TurboYang.Utiltity.Jwt.Tests.NetCore3.csproj", "{D124C379-E059-4154-91B8-ACA29C8E288B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utiltity.Jwt.Tests.Net45", "TurboYang.Utiltity.Jwt.Tests.Net45\TurboYang.Utiltity.Jwt.Tests.Net45.csproj", "{F28EA231-9A6D-4F3A-99EB-7197723C91F2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboYang.Utiltity.Jwt.Tests.Net46", "TurboYang.Utiltity.Jwt.Tests.Net46\TurboYang.Utiltity.Jwt.Tests.Net46.csproj", "{1818B76D-9528-4C9A-A3D8-9AB02DD716ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurboYang.Utiltity.Jwt.Tests.NetCore3", "TurboYang.Utiltity.Jwt.Tests.NetCore3\TurboYang.Utiltity.Jwt.Tests.NetCore3.csproj", "{D124C379-E059-4154-91B8-ACA29C8E288B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +33,6 @@ Global
 		{D124C379-E059-4154-91B8-ACA29C8E288B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D124C379-E059-4154-91B8-ACA29C8E288B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D124C379-E059-4154-91B8-ACA29C8E288B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F28EA231-9A6D-4F3A-99EB-7197723C91F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F28EA231-9A6D-4F3A-99EB-7197723C91F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F28EA231-9A6D-4F3A-99EB-7197723C91F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F28EA231-9A6D-4F3A-99EB-7197723C91F2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1818B76D-9528-4C9A-A3D8-9AB02DD716ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1818B76D-9528-4C9A-A3D8-9AB02DD716ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1818B76D-9528-4C9A-A3D8-9AB02DD716ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1818B76D-9528-4C9A-A3D8-9AB02DD716ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
