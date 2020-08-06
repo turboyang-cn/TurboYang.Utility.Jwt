@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Authors>TurboYang</Authors>
+    <Product>TurboYang.Utility.Jwt</Product>
+    <Description>A general JWT(JSON Web Token) utilities</Description>
+    <Copyright>© TurboYang. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/turboyang-cn/TurboYang.Utility.Jwt</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.NetCore" Version="1.8.6" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+  </ItemGroup>
+
+</Project>
