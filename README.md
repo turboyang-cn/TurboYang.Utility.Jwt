@@ -1,2 +1,2 @@
-# TurboYang.Utiltity.Jwt
-JWT Utilitity
+# TurboYang.Utility.Jwt
+JWT Utility
