@@ -94,5 +94,31 @@ namespace TurboYang.Utility.Jwt
                 return false;
             }
         }
+
+        public Byte[] ExtractPayload(String jwtString)
+        {
+            try
+            {
+                return Base64UrlConverter.Decode(jwtString.Split('.')[1]);
+            }
+            catch
+            {
+                return default;
+            }
+        }
+
+        public T ExtractPayload<T>(String jwtString)
+        {
+            try
+            {
+                Byte[] payloadData = ExtractPayload(jwtString);
+
+                return JsonSerializer.Deserialize<T>(Encoding.UTF8.GetString(payloadData));
+            }
+            catch
+            {
+                return default;
+            }
+        }
     }
 }
